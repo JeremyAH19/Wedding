@@ -10,14 +10,17 @@
   <script src="./scripts/main.js"></script>
 </head>
 <body>
-  <nav>
-    <a href="#home" class="nav-links">Home</a>
-    <a href="#ourstory" class="nav-links">Our Story</a>
-    <a href="#venue" class="nav-links">Venue</a>
-    <a href="#accomodations" class="nav-links">Accomodations</a>
-    <a href="#registry" class="nav-links">Registry</a>
-    <a href="#photos" class="nav-links">Photos</a>
-  </nav>
+  <div id="nav-container" class="hide">
+    <input class="menu-button" type="button" onclick="toggleMenu()" />      
+    <nav>
+      <a href="#home" class="nav-link hide">Home</a>
+      <a href="#ourstory" class="nav-link hide">Our Story</a>
+      <a href="#venue" class="nav-link hide">Venue</a>
+      <a href="#accomodations" class="nav-link hide">Accomodations</a>
+      <a href="#registry" class="nav-link hide">Registry</a>
+      <a href="#photos" class="nav-link hide">Photos</a>
+    </nav>
+  </div>
   <div id="candj">
     <p class="names">Carolyn & Jeremy</p>
     <p class="dateloc">May 26th, 2019 | North Brunswick, NJ</p>
