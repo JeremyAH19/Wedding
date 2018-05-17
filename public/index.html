@@ -11,7 +11,7 @@
 </head>
 <body>
   <div id="nav-container" class="hide">
-    <input class="menu-button" type="button" onclick="toggleMenu()" />      
+    <input id="menu-button" class="hide" type="button" onclick="toggleMenu()" />      
     <nav>
       <a href="#home" class="nav-link hide">Home</a>
       <a href="#ourstory" class="nav-link hide">Our Story</a>
@@ -21,33 +21,62 @@
       <a href="#photos" class="nav-link hide">Photos</a>
     </nav>
   </div>
-  <div id="candj">
-    <p class="names">Carolyn & Jeremy</p>
-    <p class="dateloc">May 26th, 2019 | North Brunswick, NJ</p>
-  </div>
-  <div id="main-pic-div">
-    <div id="pic-container">
-      <img id="main-pic" src="./img/carolynjeremymain.jpg"
+  <div class="wrapper">
+    <div id="candj">
+      <p class="names">Carolyn & Jeremy</p>
+      <p class="dateloc">May 26th, 2019 | North Brunswick, NJ</p>
     </div>
-  </div>
-  <div id="ourstory" class="section-title-div">
-    <p class="section-title">Our Story</p>
-    <p class="section-content">Lorem ipsum dolor sit amet, laoreet nonumes in vel. Cu mei audire maluisset reformidans. Integre habemus molestie id eum, an sea dico eloquentiam. Has graece equidem fabellas at.</p>
-    <p class="section-content">Mutat disputando quo id, enim fabulas saperet eu eos. No eam detraxit persecuti, his summo vivendo vituperatoribus ad. An labitur propriae moderatius mei. Eam cu temporibus interpretaris, te audire platonem has, eu nonumy expetendis has. Cum mazim possim et, prima impedit at nam.</p>
-    <p class="section-content">Per ei simul dicant meliore, te ius novum appareat eloquentiam. Minim timeam deleniti sit id. Vis blandit quaestio conclusionemque cu. Cu mea deleniti delectus. Ex pri verear labores legendos, dolore indoctum te has. Omnesque euripidis constituto mea et, elaboraret interesset at mea, pro zril debitis at.</p>
-    <p class="section-content">Erant nihil quodsi at nec, dictas gloriatur adversarium cum id, vel fabulas apeirian praesent an. Commune accusamus assentior per id, eam error utroque deleniti te. Oratio latine salutatus duo in, pri ei menandri corrumpit. Eam ex aliquip imperdiet, mea insolens suscipiantur ei.</p>
-  </div>
-  <div id="venue" class="section-title-div">
-    <p class="section-title">Venue</p>
-  </div>
-  <div id="accomodations" class="section-title-div">
-    <p class="section-title">Accomodations</p>
-  </div>
-  <div id="registry" class="section-title-div">
-    <p class="section-title">Registry</p>
-  </div>
-  <div id="photos" class="section-title-div">
-    <p class="section-title">Photos</p>
+    <div id="main-pic-div">
+      <div id="pic-container">
+        <img id="main-pic" src="./img/carolynjeremymain.jpg" />
+      </div>
+    </div>
+    <div id="ourstory" class="main-section">
+      <div class="section-title-container">
+        <p class="section-title">Our Story</p>
+      </div>
+      <div class="section-content-container">
+        <p class="section-content">Lorem ipsum dolor sit amet, laoreet nonumes in vel. Cu mei audire maluisset reformidans. Integre habemus molestie id eum, an sea dico eloquentiam. Has graece equidem fabellas at.</p>
+        <p class="section-content">Mutat disputando quo id, enim fabulas saperet eu eos. No eam detraxit persecuti, his summo vivendo vituperatoribus ad. An labitur propriae moderatius mei. Eam cu temporibus interpretaris, te audire platonem has, eu nonumy expetendis has. Cum mazim possim et, prima impedit at nam.</p>
+        <p class="section-content">Per ei simul dicant meliore, te ius novum appareat eloquentiam. Minim timeam deleniti sit id. Vis blandit quaestio conclusionemque cu. Cu mea deleniti delectus. Ex pri verear labores legendos, dolore indoctum te has. Omnesque euripidis constituto mea et, elaboraret interesset at mea, pro zril debitis at.</p>
+        <p class="section-content">Erant nihil quodsi at nec, dictas gloriatur adversarium cum id, vel fabulas apeirian praesent an. Commune accusamus assentior per id, eam error utroque deleniti te. Oratio latine salutatus duo in, pri ei menandri corrumpit. Eam ex aliquip imperdiet, mea insolens suscipiantur ei.</p>
+      </div>
+    </div>
+    <div id="venue" class="main-section">
+      <div class="section-title-container">
+          <p class="section-title">Venue</p>
+      </div>
+      <div class="section-content-container flex">
+        <div id="venue-info" class="flex-item">
+          <div id="venue-pic-container">
+            <img id="venue-pic" src="./img/bnaitikvah.jpg" />
+          </div>
+          <p id="ceremony-title">Ceremony & Reception</p>
+          <p class="ceremony-info">Congregation B'Nai Tikvah</p>
+          <p class="ceremony-info">1001 Finnegans Lane</p>
+          <p class="ceremony-info">North Brunswick, NJ 08902</p>
+          <p class="ceremony-info small">Ceremony starts at 3:30pm followed by cocktail hour, dinner, and dancing.</p>
+        </div>
+        <div id="venue-map" class="flex-item">
+        
+        </div>
+      </div>
+    </div>
+    <div id="accomodations" class="main-section">
+      <div class="section-title-container">
+        <p class="section-title">Accomodations</p>
+      </div>  
+    </div>
+    <div id="registry" class="main-section">
+      <div class="section-title-container">
+        <p class="section-title">Registry</p>
+      </div>   
+    </div>  
+    <div id="photos" class="main-section">
+      <div class="section-title-container">
+        <p class="section-title">Photos</p>
+      </div>   
+    </div>    
   </div>
 </body>
 </html>
