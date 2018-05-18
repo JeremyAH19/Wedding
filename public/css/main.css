@@ -1,26 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f9f8f2;
   width: 100%;
   height: 100%;
 }
-  
-#nav-container {
+
+#nav-container {   
+  background-color: #ebe9e3;
+  width: 100%;
+  height: 75%;
   opacity: 0.9;
   position: fixed;
   top: 0;
-  width: 100%;
+}
+
+#nav-container.hide {
+  background-color: #f9f8f200;
+  height: 36px;
+}
+  
+#menu-button {   
+  border: none;
+  position: relative;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  margin: 2px 5px;
+  padding: 2px 2px;
+  background: url("../img/menu_icon_hover.svg") no-repeat center;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+#menu-button.hide {
+  background: url("../img/menu_icon.svg") no-repeat center;
+  background-size: 100%;
+}
+
+#menu-button:hover {
+  background: url("../img/menu_icon_hover.svg") no-repeat center;
+  background-size: 100%;
+  transform: scale(1.08);
 }
 
 .nav-link {
+  font-size: 2rem;
+  display: block;
   font-family: 'Roboto Slab', serif;
   padding: 2px 5px;
   margin: 2px 5px;
   text-decoration: none;
   color: #232323;
 }
-  
+
+.nav-link.hide {
+  display: none;
+}
+
 .nav-link:hover {
   color: #f71b73;
+  transform: scale(1.01);
+}
+
+#main-pic-div {
+  margin: 20px 0;
+}
+
+#main-pic {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #candj {
@@ -28,6 +79,14 @@ body {
   text-align: center;
 }
   
+#pic-container {
+  margin: auto;
+  border: 1px solid #f71b73;
+  border-radius: 3px;
+  width: 239px; 
+  height: 202px;
+}
+
 .names {
   margin: 4px 0;
   font-family: 'Rochester', cursive;
@@ -41,39 +100,10 @@ body {
   font-size: 2rem;
   color: #232323;
 }
-  
-#main-pic-div {
-  margin: 20px 0;
-}
-  
-#pic-container {
-  margin: auto;
-  border: 1px solid #f71b73;
-  border-radius: 3px;
-  width: 239px; 
-  height: 202px;
-}
-  
-#main-pic {
-  max-width: 100%;
-  max-height: 100%;
-}
- 
+
 .main-section {
   margin-top: 75px;
   width: 100%;
-}
-
-.section-title-container {
-  margin-bottom: 30px;
-  text-align: center;
-}
-  
-.section-title {
-  font-family: 'Roboto Slab', serif;
-  font-size: 2rem;
-  margin: 0 5px;
-  color: #232323; 
 }
 
 .section-content-container {
@@ -81,10 +111,19 @@ body {
 }
 
 .section-content-container.flex {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  height: 100%;
+  display: block;
+}
+
+.section-title-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  margin: 0 5px;
+  color: #232323; 
 }
 
 .section-content {
@@ -97,14 +136,14 @@ body {
 }
 
 .flex-item {
-  width: 40%;
-  height: 100%;
-  border: 1px solid black;
+  width: 100%;
+  height: 40%;
 }
 
 #venue-pic-container {
-  width: 100%; 
-  height: 100%;
+  width: 40%; 
+  height: 40%;
+  margin: auto;
 }
 
 #venue-pic {
@@ -115,83 +154,24 @@ body {
 #ceremony-title {
   font-family: 'Roboto Slab', serif;
   font-size: 1.5rem;
-  margin: 10px 0 2px 0;
+  margin: 10px auto 2px auto;
   color: #232323; 
 }
 
 .ceremony-info {
   font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
-  margin: 0 0 1px 0;
+  margin: 0 auto 1px auto;
   color: #232323; 
 }
 
 .ceremony-info.small {
-  margin-top: 5px;
+  margin: 5px, auto, 0, auto;
   font-size: 0.8rem;
 }
 
 #venue-map {
   height: 300px;
-}
-
-@media screen and (max-width: 768px) {
-  #nav-container {   
-    background-color: #ebe9e3;
-    height: 75%;
-  }
-
-  #nav-container.hide {
-    background-color: #f9f8f200;
-    height: 36px;
-  }
-  
-  #menu-button {   
-    border: none;
-    position: relative;
-    left: 0;
-    height: 30px;
-    width: 30px;
-    margin: 2px 5px;
-    padding: 2px 2px;
-    background: url("../img/menu_icon_hover.svg") no-repeat center;
-    background-size: 100%;
-    cursor: pointer;
-  }
-
-  #menu-button.hide {
-    background: url("../img/menu_icon.svg") no-repeat center;
-    background-size: 100%;
-  }
-
-  #menu-button:hover {
-    background: url("../img/menu_icon_hover.svg") no-repeat center;
-    background-size: 100%;
-  }
-
-  .nav-link {
-    font-size: 2rem;
-    display: block;
-  }
-
-  .nav-link.hide {
-    display: none;
-  }
-
-  .section-content-container.flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .flex-item {
-    width: 40%;
-    height: 40%;
-  }
-
-  #venue-pic-container {
-    width: 40%; 
-    height: 40%;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -200,8 +180,11 @@ body {
   }
   
   #nav-container {
-    background-color: #ebe9e3;
     height: 36px;
+  }
+
+  #nav-container.hide {
+    background-color: #ebe9e3;
   }
 
   nav {
@@ -216,5 +199,43 @@ body {
     font-size: 1.2rem;
     height: 100%;
     display: inline-block;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.03);
+  }
+
+  .nav-link.hide {
+    display: inline-block;
+  }
+
+  .section-content-container.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  .flex-item {
+    width: 40%;
+    height: 100%;
+  }
+
+  #venue-pic-container {
+    width: 100%; 
+    height: 100%;
+    margin: 0;
+  }
+
+  #ceremony-title {
+    margin: 10px 0 2px 0;
+  }
+  
+  .ceremony-info {
+    margin: 0 0 1px 0;
+  }
+  
+  .ceremony-info.small {
+    margin: 5px, 0, 0, 0;
   }
 }
