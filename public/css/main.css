@@ -19,7 +19,7 @@ body {
 
 #nav-container.hide {
   background-color: #f9f8f200;
-  height: 36px;
+  height: 4%;
 }
   
 #menu-button {   
@@ -66,7 +66,7 @@ body {
 }
 
 #main-pic-div {
-  margin: 20px 0;
+  margin: 4% 0;
 }
 
 #main-pic {
@@ -78,32 +78,32 @@ body {
 }
 
 #candj {
-  margin: 75px 0;
+  margin: 10% 0;
   text-align: center;
 }
   
 #pic-container {
   margin: auto;
-  width: 40%; 
-  height: 40%;
+  width: 70%; 
+  height: 70%;
 }
 
 .names {
-  margin: 4px 0;
+  margin: 1% 0;
   font-family: 'Rochester', cursive;
-  font-size: 4rem;
+  font-size: 3.4rem;
   color: #232323;
 }
   
 .dateloc {
-  margin: 4px 0;
+  margin: 1% 0;
   font-family: 'Rochester', cursive;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #232323;
 }
 
 .main-section {
-  margin-top: 75px;
+  margin-top: 15%;
   width: 100%;
 }
 
@@ -116,20 +116,20 @@ body {
 }
 
 .section-title-container {
-  margin-bottom: 30px;
+  margin-bottom: 6%;
   text-align: center;
 }
 
 .section-title {
   font-family: 'Roboto Slab', serif;
   font-size: 2rem;
-  margin: 0 5px;
+  margin: 0 1%;
   color: #232323; 
 }
 
 .section-content {
   font-family: 'Roboto', sans-serif;
-  width: 60%;
+  width: 90%;
   font-size: 1rem;
   padding: 2px 5px;
   margin: 15px auto;
@@ -144,7 +144,7 @@ body {
 
 #venue-info {
   text-align: center;
-  margin-bottom: 30px; 
+  margin-bottom: 6%; 
 }
 
 #venue-pic, #venue-map {
@@ -159,19 +159,18 @@ body {
 #ceremony-title {
   font-family: 'Roboto Slab', serif;
   font-size: 1.5rem;
-  margin: 10px auto 2px auto;
+  margin: 3% auto 1% auto;
   color: #232323; 
 }
 
 .ceremony-info {
   font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
-  margin: 0 auto 1px auto;
+  margin: 0 auto;
   color: #232323; 
 }
 
 .ceremony-info.small {
-  margin: 5px, auto, 0, auto;
   font-size: 0.8rem;
 }
 
@@ -181,7 +180,7 @@ body {
   }
   
   #nav-container {
-    height: 36px;
+    height: 4%;
   }
 
   #nav-container.hide {
@@ -210,6 +209,14 @@ body {
     display: inline-block;
   }
 
+  .names {
+    font-size: 4rem;
+  }
+
+  .dateloc {
+    font-size: 2.3rem;
+  }
+
   .section-content-container.flex {
     display: flex;
     flex-flow: row nowrap;
@@ -224,14 +231,28 @@ body {
   }
 
   #ceremony-title {
-    margin: 10px 0 2px 0;
+    margin: 3% 0 1% 0;
   }
   
   .ceremony-info {
-    margin: 0 0 1px 0;
+    margin: 0 0 1% 0;
   }
   
   .ceremony-info.small {
-    margin: 5px, 0, 0, 0;
+    margin: 2%, 0, 0, 0;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .names {
+    font-size: 3.7rem;
+  }
+
+  .dateloc {
+    font-size: 2rem;
+  }
+
+  .section-content {
+    width: 70%;
   }
 }
