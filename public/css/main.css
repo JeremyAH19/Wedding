@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Dividers';
+  src: url('../fonts/dividers.eot');
+  src: url('../fonts/dividers.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/dividers.woff2') format('woff2'),
+       url('../fonts/dividers.woff') format('woff'),
+       url('../fonts/dividers.ttf') format('truetype'),
+       url('../fonts/dividers.svg#dividers') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,20 +19,20 @@ html {
 }
 
 body {
-  background-color: #f9f8f2;
+  background-color: #eeeeee;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 em {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #nav-container {   
-  background-color: #ebe9e3;
+  background-color: #FFCDD2;
   width: 100%;
-  height: 75%;
-  opacity: 0.9;
+  height: 100%;
   position: fixed;
   top: 0;
 }
@@ -72,7 +84,7 @@ em {
 }
 
 .link:hover {
-  color: #f71b73;
+  color: #BE3B46;
   transform: scale(1.01);
 }
 
@@ -111,6 +123,13 @@ em {
   font-family: 'Great Vibes', cursive;
   font-size: 2.7rem;
   color: #232323;
+}
+
+.divider {
+  font-family: 'Dividers';
+  font-size: 3rem;
+  text-align: center;
+  margin: 8% 0 8% 4%;
 }
 
 .main-section {
@@ -201,7 +220,7 @@ em {
   }
 
   #nav-container.hide {
-    background-color: #ebe9e3;
+    background-color: #FFCDD2;
   }
 
   nav {
@@ -279,7 +298,7 @@ em {
   }
 
   #nav-container.hide {
-    background-color: #ebe9e3;
+    background-color: #FFCDD2;
   }
 
   nav {
